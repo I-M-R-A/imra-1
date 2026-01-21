@@ -1,0 +1,11 @@
+runtime:
+  seed: 1337
+  device: cuda
+  precision: bf16
+logging:
+  level: INFO
+  trace_dir: .imra/traces
+modules:
+  perceive: imra.perceive.engines.stub:StubPerceiveEngine
+  reason: imra.reason.executor:ReasonExecutor
+  verify: imra.verify.critics.stub:StubVerifyCritic

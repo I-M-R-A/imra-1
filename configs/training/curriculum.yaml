@@ -1,0 +1,18 @@
+curriculum:
+  - name: arithmetic_easy
+    dataset: datasets/arithmetic_easy.jsonl
+    max_depth: 4
+    weight: 0.4
+  - name: logic_loops
+    dataset: datasets/logic_loops.jsonl
+    max_depth: 8
+    weight: 0.35
+  - name: paradox
+    dataset: datasets/paradox.yaml
+    max_depth: 12
+    weight: 0.25
+optimization:
+  batch_size: 2
+  learning_rate: 1e-4
+  gradient_accumulation_steps: 8
+  clip_norm: 1.0

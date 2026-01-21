@@ -1,0 +1,78 @@
+{
+  "name": "IMRA-1 Arithmetic Benchmark",
+  "version": "1.0",
+  "description": "Comprehensive arithmetic test suite including large numbers, edge cases, and multi-step problems",
+  "categories": {
+    "basic_operations": [
+      {"id": "basic_001", "problem": "What is 5 plus 3?", "expected": 8, "difficulty": "easy"},
+      {"id": "basic_002", "problem": "What is 10 minus 4?", "expected": 6, "difficulty": "easy"},
+      {"id": "basic_003", "problem": "What is 7 times 6?", "expected": 42, "difficulty": "easy"},
+      {"id": "basic_004", "problem": "What is 24 divided by 8?", "expected": 3, "difficulty": "easy"}
+    ],
+    "large_numbers": [
+      {"id": "large_001", "problem": "What is 999999 plus 1?", "expected": 1000000, "difficulty": "medium"},
+      {"id": "large_002", "problem": "Calculate 1000000 minus 999999", "expected": 1, "difficulty": "medium"},
+      {"id": "large_003", "problem": "What is 12345 times 6789?", "expected": 83810205, "difficulty": "hard"},
+      {"id": "large_004", "problem": "Divide 1000000000 by 1000", "expected": 1000000, "difficulty": "medium"},
+      {"id": "large_005", "problem": "What is 9999999999 plus 1?", "expected": 10000000000, "difficulty": "hard"},
+      {"id": "large_006", "problem": "Calculate 123456789 minus 987654321", "expected": -864197532, "difficulty": "hard"},
+      {"id": "large_007", "problem": "What is 99999 times 99999?", "expected": 9999800001, "difficulty": "hard"},
+      {"id": "large_008", "problem": "Divide 1000000000000 by 1000000", "expected": 1000000, "difficulty": "hard"},
+      {"id": "large_009", "problem": "What is 2147483647 plus 1?", "expected": 2147483648, "difficulty": "hard", "note": "32-bit integer overflow test"},
+      {"id": "large_010", "problem": "Calculate 9223372036854775807 plus 1", "expected": 9223372036854775808, "difficulty": "extreme", "note": "64-bit integer overflow test"}
+    ],
+    "decimals_and_fractions": [
+      {"id": "decimal_001", "problem": "What is 3.14 plus 2.86?", "expected": 6.0, "difficulty": "medium"},
+      {"id": "decimal_002", "problem": "Calculate 10.5 minus 3.7", "expected": 6.8, "difficulty": "medium"},
+      {"id": "decimal_003", "problem": "What is 2.5 times 4?", "expected": 10.0, "difficulty": "medium"},
+      {"id": "decimal_004", "problem": "Divide 7.5 by 2.5", "expected": 3.0, "difficulty": "medium"},
+      {"id": "decimal_005", "problem": "What is 0.001 plus 0.999?", "expected": 1.0, "difficulty": "medium"},
+      {"id": "decimal_006", "problem": "Calculate 123.456 times 789.012", "expected": 97408.265472, "difficulty": "hard"},
+      {"id": "decimal_007", "problem": "What is 1.111111 times 9?", "expected": 9.999999, "difficulty": "hard"},
+      {"id": "decimal_008", "problem": "Divide 1 by 3 and multiply by 3", "expected": 1.0, "difficulty": "hard", "note": "Floating point precision test"}
+    ],
+    "negative_numbers": [
+      {"id": "neg_001", "problem": "What is -5 plus 3?", "expected": -2, "difficulty": "medium"},
+      {"id": "neg_002", "problem": "Calculate -10 minus -4", "expected": -6, "difficulty": "medium"},
+      {"id": "neg_003", "problem": "What is -7 times 6?", "expected": -42, "difficulty": "medium"},
+      {"id": "neg_004", "problem": "What is -7 times -6?", "expected": 42, "difficulty": "medium"},
+      {"id": "neg_005", "problem": "Divide -24 by 8", "expected": -3, "difficulty": "medium"},
+      {"id": "neg_006", "problem": "Divide -24 by -8", "expected": 3, "difficulty": "medium"},
+      {"id": "neg_007", "problem": "What is -999999999 minus 1?", "expected": -1000000000, "difficulty": "hard"}
+    ],
+    "edge_cases": [
+      {"id": "edge_001", "problem": "What is 0 plus 0?", "expected": 0, "difficulty": "easy"},
+      {"id": "edge_002", "problem": "What is 0 times 1000000?", "expected": 0, "difficulty": "easy"},
+      {"id": "edge_003", "problem": "What is 1 times 1?", "expected": 1, "difficulty": "easy"},
+      {"id": "edge_004", "problem": "What is 0 minus 0?", "expected": 0, "difficulty": "easy"},
+      {"id": "edge_005", "problem": "Divide 0 by 5", "expected": 0, "difficulty": "medium"},
+      {"id": "edge_006", "problem": "What is 1000000 times 0?", "expected": 0, "difficulty": "medium"},
+      {"id": "edge_007", "problem": "What is 999999999999999 times 1?", "expected": 999999999999999, "difficulty": "medium"}
+    ],
+    "word_problems": [
+      {"id": "word_001", "problem": "A store has 1000000 items. 999999 are sold. How many remain?", "expected": 1, "difficulty": "medium"},
+      {"id": "word_002", "problem": "Each warehouse stores 50000 units. There are 200 warehouses. What is the total?", "expected": 10000000, "difficulty": "hard"},
+      {"id": "word_003", "problem": "A company has 1234567890 dollars. They spend 987654321 dollars. How much is left?", "expected": 246913569, "difficulty": "hard"},
+      {"id": "word_004", "problem": "If you have 999 boxes with 999 items each, how many items total?", "expected": 998001, "difficulty": "hard"},
+      {"id": "word_005", "problem": "A factory produces 123456 items per day. After 7 days, how many items?", "expected": 864192, "difficulty": "hard"},
+      {"id": "word_006", "problem": "Split 1000000000 dollars equally among 1000 people. How much does each get?", "expected": 1000000, "difficulty": "hard"}
+    ],
+    "powers_and_scientific": [
+      {"id": "pow_001", "problem": "What is 2 to the power of 10?", "expected": 1024, "difficulty": "medium"},
+      {"id": "pow_002", "problem": "Calculate 10 to the power of 6", "expected": 1000000, "difficulty": "medium"},
+      {"id": "pow_003", "problem": "What is 2 to the power of 20?", "expected": 1048576, "difficulty": "hard"},
+      {"id": "pow_004", "problem": "Calculate 3 to the power of 10", "expected": 59049, "difficulty": "hard"},
+      {"id": "pow_005", "problem": "What is 10 to the power of 12?", "expected": 1000000000000, "difficulty": "extreme"}
+    ],
+    "stress_test_numbers": [
+      {"id": "stress_001", "problem": "What is 111111111 plus 888888888?", "expected": 999999999, "difficulty": "hard"},
+      {"id": "stress_002", "problem": "Calculate 123456789012345 minus 12345678901234", "expected": 111111110111111, "difficulty": "extreme"},
+      {"id": "stress_003", "problem": "What is 99999 times 10001?", "expected": 1000089999, "difficulty": "hard"},
+      {"id": "stress_004", "problem": "Divide 999999999999 by 999999", "expected": 1000001, "difficulty": "extreme"},
+      {"id": "stress_005", "problem": "What is 314159265358979 plus 271828182845904?", "expected": 585987448204883, "difficulty": "extreme", "note": "Pi + e digits"},
+      {"id": "stress_006", "problem": "Calculate 1000000000000000 minus 1", "expected": 999999999999999, "difficulty": "extreme"},
+      {"id": "stress_007", "problem": "What is 12345678901234567890 plus 98765432109876543210?", "expected": 111111111011111111100, "difficulty": "extreme"},
+      {"id": "stress_008", "problem": "Multiply 1234567890 by 9876543210", "expected": 12193263111263526900, "difficulty": "extreme"}
+    ]
+  }
+}

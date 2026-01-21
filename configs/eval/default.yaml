@@ -1,0 +1,8 @@
+benchmark: docs/evaluation.md
+max_reasoning_steps: 1024
+max_branch_width: 32
+confidence_threshold: 0.72
+report:
+  markdown: true
+  latex: false
+  save_jsonl: true
