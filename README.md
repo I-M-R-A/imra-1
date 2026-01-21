@@ -5,6 +5,10 @@
 [![Status: Research](https://img.shields.io/badge/status-research%20prototype-orange.svg)]()
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+<p align="center">
+  <img src="assets/imra_logo.png" alt="IMRA-1 logo" width="700"/>
+</p>
+
 IMRA-1 is a framework that teaches AI to **think about its own thinking**. Rather than just producing answers, IMRA-1 analyzes its reasoning process to detect failures, calibrate confidence, and know when it doesn't know.
 
 ## What Makes IMRA-1 Different
