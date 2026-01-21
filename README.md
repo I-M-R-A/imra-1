@@ -9,7 +9,7 @@
   <img src="assets/imra_logo.png" alt="IMRA-1 logo" width="700"/>
 </p>
 
-IMRA-1 is a framework that teaches AI to **think about its own thinking**. Rather than just producing answers, IMRA-1 analyzes its reasoning process to detect failures, calibrate confidence, and know when it doesn't know.
+IMRA-1 is a framework that teaches AI to **think about its own thinking**. Rather than just producing answers, it analyzes its reasoning process to detect failures, calibrate confidence, and know when it doesn't know.
 
 ## What Makes IMRA-1 Different
 
